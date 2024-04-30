@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahad Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="images/developer.png" alt=""></a>
+            <h1><a href="#">Rahad Developer</a></h1>
+        </div>
+        <nav>
+            <ul id="menuItems">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="menutoggle()"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <section class="showcase">
+        <h1>Welcome To My Website</h1>
+        <p>Learn more about what we have to offer.</p>
+        <a href="#">Explore Now →</a>
+    </section>
+    <section class="services" id="services">
+        <h2>My Services</h2>
+        <div class="row">
+            <div class="box">
+                <img src="images/web_background06.webp" alt="">
+                <h3>Modern Web Service</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque ex molestiae magnam amet
+                    consequuntur quidem tempora delectus ducimus officiis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="box">
+                <img src="images/images.jpeg" alt="">
+                <h3>Web Hosting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque ex molestiae magnam amet
+                    consequuntur quidem tempora delectus ducimus officiis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="box">
+                <img src="images/web_background02.jpeg" alt="">
+                <h3>Database Management</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque ex molestiae magnam amet
+                    consequuntur quidem tempora delectus ducimus officiis.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="courses" id="courses">
+        <h2>My Courses</h2>
+        <div class="row">
+            <div class="box">
+                <img src="images/html.png" alt="html logo">
+                <h3>Learn HTML 5</h3>
+                <p><del>1500</del> <strong>799</strong></p>
+                <a href="#">Parchase</a>
+            </div>
+            <div class="box">
+                <img src="images/css-3.png" alt="css logo">
+                <h3>Learn CSS 3</h3>
+                <p><del>2500</del> <strong>1199</strong></p>
+                <a href="#">Parchase</a>
+            </div>
+            <div class="box">
+                <img src="images/5968292.png" alt="">
+                <h3>Learn JavaScript</h3>
+                <p><del>3000</del> <strong>1499</strong></p>
+                <a href="#">Parchase</a>
+            </div>
+            <div class="box">
+                <img src="images/React-icon.png" alt="">
+                <h3>Learn React JS</h3>
+                <p><del>3500</del> <strong>2199</strong></p>
+                <a href="#">Parchase</a>
+            </div>
+            <div class="box">
+                <img src="images/express_js.png" alt="">
+                <h3>Learn Express JS</h3>
+                <p><del>3800</del> <strong>2399</strong></p>
+                <a href="#">Parchase</a>
+            </div>
+            <div class="box">
+                <img src="images/node_js.png" alt="">
+                <h3>Learn Node JS</h3>
+                <p><del>4500</del> <strong>2699</strong></p>
+                <a href="#">Parchase</a>
+            </div>
+            <div class="box">
+                <img src="images/vue js.png" alt="">
+                <h3>Learn Vue JS</h3>
+                <p><del>3500</del> <strong>2199</strong></p>
+                <a href="#">Parchase</a>
+            </div>
+            <div class="box">
+                <img src="images/mongodb.png" alt="">
+                <h3>Learn Mongo DB</h3>
+                <p><del>4500</del> <strong>3299</strong></p>
+                <a href="#">Parchase</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <form action="#" method="get">
+            <h2>Contact Us</h2>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message" cols="30" rows="8"></textarea>
+            <input type="submit" placeholder="Submit">
+        </form>
+    </section>
+    <footer class="footer">
+        <p>&copy;Rahad Developer - 2023</p>
+        <ul>
+            <a href="#" alt="Email" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="#" title="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" title="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" title="Telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="#" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </ul>
+    </footer>
+
+    <!-- ---------------js for toggle menu----------- -->
+
+    <script>
+        var menuItems = document.getElementById("menuItems");
+
+        menuItems.style.maxHeight = "0px"
+
+        function menutoggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "400px"
+            }
+            else {
+                menuItems.style.maxHeight = "0px"
+            }
+
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/9c87656713.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
